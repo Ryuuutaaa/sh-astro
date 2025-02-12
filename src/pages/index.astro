@@ -9,5 +9,14 @@ console.log(title, webTitle)
 ---
 
 <Layout title={title}>
-	<a href="/about">About</a>
+	<a href="/about" class="link">About</a>
 </Layout>
+
+<style is:global>
+	.link{
+		text-decoration: none;
+		padding: 20px;
+		background-color: antiquewhite;
+		color: black;
+	}
+</style>
