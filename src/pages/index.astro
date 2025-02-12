@@ -1,19 +1,14 @@
 ---
 
+import Layout from "../layouts/Layout.astro"
+
 const name = "Ryuta"
 const webTitle = "learn astro"
 console.log(name, webTitle)
 
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{webTitle}</title>
-</head>
-<body>
+
+<Layout>
 	<h1>{name}</h1>
 	<a href="/about">About</a>
-</body>
-</html>
+</Layout>
