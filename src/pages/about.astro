@@ -1,11 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro"
-
-
-
 const title = "About page"
+
+console.log({title})
 ---
 
 <Layout title={title}>
     <a href="/" class="link">Back to home</a>
 </Layout>
+
+<script>
+    const link = document.querySelector(".link");
+    console.log("test for browser")
+    link.textContent = "Hellow word";
+</script>
